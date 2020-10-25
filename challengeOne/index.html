@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>TODOS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <h2>Todos</h2>
+    <ul id=toDoList>
+        <li class="checked">task</li>
+        <li>task</li>
+        <li>task</li>
+        <li>task</li>
+    </ul>
+    <form>
+        <div id="tasksLeft"></div>
+        <span onclick="allTasksPresent()">All.</span>
+        <span onclick="activeTasksOnly()">Active.</span>
+        <span onclick="completedTasksOnly()">Completed</span>
+    </form>
+    
+    <footer>
+        
+        <div id="addNewItem" class="header">
+            <input type="text" id="myInput">
+            <span onclick="newTask()" class="add">+</span>
+          </div>
+    </footer>
+    <script>
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+        }
+
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+            }
+        }
+
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+            }
+        }, false);
+
+        function newTask() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+            document.getElementById("tasksLeft").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+            }
+        }
+        }
+
+        function allTasksPresent() {
+            var myNodelist = document.getElementsByTagName("LI");
+            var i;
+            var count = 0;
+        for (i = 0; i < myNodelist.length; i++) {
+            count = count + 1
+        document.getElementById("tasksLeft")
+        }
+        }
+    </script>
+</body>
+</html>
