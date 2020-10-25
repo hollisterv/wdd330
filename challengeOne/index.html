@@ -85,10 +85,34 @@
             var myNodelist = document.getElementsByTagName("LI");
             var i;
             var count = 0;
-        for (i = 0; i < myNodelist.length; i++) {
-            count = count + 1
-        document.getElementById("tasksLeft")
+            for (i = 0; i < myNodelist.length; i++) {
+                count = count + 1
+                document.getElementById("tasksLeft")
+            }
         }
+
+        function activeTasksOnly() {
+            var myNodelist = document.getElementsByTagName("LI");
+            var i;
+            var close = document.getElementsByClassName("close");
+            var count = 0;
+            for (i = 0; i < myNodelist.length; i++) {
+                if (myNodeList == closed)
+                    count = count + 1
+                    document.getElementById("tasksLeft")
+            }
+        }
+
+        function completedTasksOnly() {
+            var myNodelist = document.getElementsByTagName("LI");
+            var i;
+            var close = document.getElementsByClassName("close");
+            var count = 0;
+            for (i = 0; i < myNodelist.length; i++) {
+                if (myNodeList != closed)
+                count = count + 1
+                document.getElementById("tasksLeft")
+            }
         }
     </script>
 </body>

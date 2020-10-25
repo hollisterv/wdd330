@@ -19,6 +19,7 @@ ul li {
     padding: 12px 8px 12px 40px;
     list-style-type: none;
     font-size: 18px;
+    border-style: groove;
 }
 
 ul li.checked {
