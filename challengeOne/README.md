@@ -1,0 +1,2 @@
+# Overview
+It is not completely finished code. I also used a lot of influence from a w3schools example that helped me to understand more about how the onclick method works. I felt rushed to finish, but I like the parts that do work. 
