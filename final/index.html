@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quilt Block Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!--<script src='main.js'></script>-->
+</head>
+<body>
+    <header>
+        <h2>Quilt Block Calculator</h2>
+    </header>
+    <div id="inputForm">
+    <form>
+        <h4>Calculate by block size</h4>
+        <label for="quiltSize">How large will the quilt be? (baby, twin, queen, or king):</label><br>
+        <input type="text" id="quiltSize" name="quiltSize"><br>
+        <label for="blockSize">Desired block size (in inches):</label><br>
+        <input type="number" id="blockSize" name="blockSize"><br>
+        <label for="blockColor">How many different colors will be used?</label><br>
+        <input type="number" id="blockColor" name="blockColor"><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <hr class="dashed">
+    <form>
+        <h4>Calculate by block rows and columns</h4>
+        <label for="quiltSize">How large will the quilt be? (baby, twin, queen, or king):</label><br>
+        <input type="text" id="quiltSize" name="quiltSize"><br>
+        <label for="blockRow">Total rows in the blanket:</label><br>
+        <input type="number" id="blockbRow" name="blockRow"><br>
+        <label for="blockColumn">Total columns in the blanket:</label><br>
+        <input type="number" id="blockColumn" name="blockColumn"><br>
+        <label for="blockColor">How many different colors will be used?</label><br>
+        <input type="number" id="blockColor" name="blockColor"><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    </div>
+    <div id="savedInfo">
+        <h4>Saved information</h4>
+
+    </div>
+    <div id="displayInfo">
+        <h4>Quilt infromation</h4>
+        
+    </div>
+    <div id="animateQuiltBlocks">
+        <h4>What it might look like</h4>
+
+    </div>
+</body>
+</html>

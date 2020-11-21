@@ -1,0 +1,59 @@
+hr.dashed {
+    border-top: 3px dashed #555555;
+  }
+
+body{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #CDC9C3;
+}
+
+header {
+    grid-column: 1 / 4;
+    color: #d9e4dd;
+    background-color: #555555;
+    text-align: center;
+    font-family: "Roboto";
+  }
+
+h4 {
+    font-family: "Roboto";
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+}
+input {
+    padding 3px;
+  }
+
+#inputForm {
+    grid-column: 1 / 2;
+    background-color: #d9e4dd;
+    margin: 15px;
+    padding: 15px;
+  }
+
+#displayInfo {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    background-color: #FBF7F0;
+    margin: 15px;
+    padding: 15px;
+  }
+
+#savedInfo {
+    grid-column: 1 / 2;
+    background-color: #FBF7F0;
+    margin: 15px;
+    padding: 15px;
+  }
+
+#animateQuiltBlocks {
+    grid-column: 2 / 4;
+    background-color: #d9e4dd;
+    margin: 15px;
+    padding: 15px;
+  }
