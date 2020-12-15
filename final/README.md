@@ -5,7 +5,7 @@ This is my final as it currently stands. I had a lot of complications on getting
 ![Web App initial look](webApp.PNG)
 
 * We can choose the options provided on the top left and they will be displayed on the bottom left. 
-![Program opens and closes files](PickingOPtions.PNG)
+![Program opens and closes files](PickingOptions.PNG)
 
 * this is where i run into issues, i have the local file pulled up, but it does not look right and it does not actually save to the local file. 
 ![Program opens and closes files](saved.PNG)
