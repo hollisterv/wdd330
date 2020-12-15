@@ -8,50 +8,53 @@
     <title>Quilt Block Calculator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <!--<script src='main.js'></script>-->
+    
 </head>
 <body>
     <header>
         <h2>Quilt Block Calculator</h2>
     </header>
     <div id="inputForm">
-    <form>
         <h4>Calculate by block size</h4>
-        <label for="quiltSize">How large will the quilt be? (baby, twin, queen, or king):</label><br>
-        <input type="text" id="quiltSize" name="quiltSize"><br>
-        <label for="blockSize">Desired block size (in inches):</label><br>
-        <input type="number" id="blockSize" name="blockSize"><br>
-        <label for="blockColor">How many different colors will be used?</label><br>
-        <input type="number" id="blockColor" name="blockColor"><br>
-        <input type="submit">
-        <input type="reset">
-    </form>
-    <hr class="dashed">
-    <form>
-        <h4>Calculate by block rows and columns</h4>
-        <label for="quiltSize">How large will the quilt be? (baby, twin, queen, or king):</label><br>
-        <input type="text" id="quiltSize" name="quiltSize"><br>
-        <label for="blockRow">Total rows in the blanket:</label><br>
-        <input type="number" id="blockbRow" name="blockRow"><br>
-        <label for="blockColumn">Total columns in the blanket:</label><br>
-        <input type="number" id="blockColumn" name="blockColumn"><br>
-        <label for="blockColor">How many different colors will be used?</label><br>
-        <input type="number" id="blockColor" name="blockColor"><br>
-        <input type="submit">
-        <input type="reset">
-    </form>
+        <label for="quiltSize">How large will the quilt be?</label><br>
+        <select id="quiltSize" name="quiltSize" size="6" multiple>
+            <option value="1">baby</option>
+            <option value="2">twin</option>
+            <option value="3">queen</option>
+            <option value="4">king</option>
+        </select><br>
+        <label for="blockSelect">Desired block size (in inches):</label><br>
+        <select id="blockSelect" name="blockSelect" size="7" multiple>
+            <option value="1">3</option>
+            <option value="2">4</option>
+            <option value="3">5</option>
+            <option value="4">6</option>
+            <option value="5">8</option>
+            <option value="6">10</option>
+        </select><br>
+          <button name="submit" id="submit">submit</button>
     </div>
-    <div id="savedInfo">
+    <form id="savedInfo">
         <h4>Saved information</h4>
+        <div id="displaySaved"></div>
+        <div id="displaySaved2"></div>
+    </form>
 
-    </div>
-    <div id="displayInfo">
-        <h4>Quilt infromation</h4>
-        
-    </div>
+    <form id="displayInfo">
+        <h4>Quilt information</h4>
+        <div id="displayDemensions"></div>
+        <div id="displayBlockAmount"></div>
+        Name your new demensions: <input type="text" id="text"><br>
+        <input type="reset">
+        <input type="submit" id="save" value="save"></button>
+    </form>
+
+    
+
     <div id="animateQuiltBlocks">
         <h4>What it might look like</h4>
 
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
